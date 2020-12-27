@@ -21,6 +21,8 @@ void Puzzle::PrintPuzzle(){
 	std::vector<int> numberLine;
 	for (int i = 1; i <= 9; i++) { numberLine.push_back(i); }
 
-
+	for(int row = 0; row < 9; row++){
+		
+	}
 	
 }

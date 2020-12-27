@@ -19,6 +19,7 @@ public:
 	}
 	void instructions();
 	void PrintPuzzle();
-	
+	bool isRowCompleted();
+	bool isColCompleted();
 
 };
