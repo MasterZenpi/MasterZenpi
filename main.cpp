@@ -12,13 +12,22 @@ using namespace std;
 * 4. check when row/column is completed. maybe display how many colums and rows are completed
 * 5. check for repeats in rows/colums with user inputs
 *  . When completed give a congradulations and option to repeat puzzle
-* 
+*
 */
 
 
 int main() {
+
 	Puzzle mainPuzzle;
-	mainPuzzle.instructions();
-	mainPuzzle.PrintPuzzle();
-		return 0;
+
+	do {
+		
+		mainPuzzle.instructions();
+		mainPuzzle.PrintPuzzle();
+		mainPuzzle.userCordnites();
+
+
+	} while (!mainPuzzle.isPuzzleCompleted());
+
+	return 0;
 }
