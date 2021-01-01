@@ -9,7 +9,7 @@ private:
 	//coordinates
 	int x = 0;
 	int y = 0;
-
+	int value = 0;
 public:
 	Puzzle();
 	~Puzzle();
@@ -17,7 +17,7 @@ public:
 	void instructions();
 	void PrintPuzzle();
 	void userCordnites();
-	void changePuzzle();
+	void changeandPrintPuzzle();
 	bool isRowCompleted();
 	bool isColCompleted();
 	bool isPuzzleCompleted();

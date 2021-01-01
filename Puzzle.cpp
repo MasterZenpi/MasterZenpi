@@ -25,12 +25,14 @@ void Puzzle::instructions() {
 }
 
 void Puzzle::PrintPuzzle() {
+	//make a loop that suffles the vectors a random amount of times so we get a random puzzle everytime
+
 	//variable initiaztion
-	const int boxSize = 3;
-	int box1[boxSize][boxSize];
 	std::vector<int> numberLine;
 	for (int i = 1; i <= 9; i++) { numberLine.push_back(i); }
 
+	//To Do: make sure that the puzzle is random
+	//		i think create two more mumberline vectors and shift threw them in the loop below
 
 	//fills in the puzzle
 	for (int row = 0; row < 9; row++) {
@@ -38,6 +40,14 @@ void Puzzle::PrintPuzzle() {
 			puzzle[row][col] = numberLine.at(col);
 		}
 		
+	}
+
+	//prints the puzzle 
+	for (int row = 0; row < 9; row++) {
+		for (int col = 0; col < 9; col++) {
+			std::cout << puzzle[row][col] << " ";
+		}
+		std::cout << std::endl;
 	}
 
 }
@@ -53,15 +63,20 @@ bool Puzzle::isPuzzleCompleted() {
 }
 
 void Puzzle::userCordnites() {
-	//this is going to ask the user to enter coordinates (as a string) then it will be split into ints
+	//this is going to ask the user to enter coordinates (as a string) then it will be split into ints.
+	// input should be "(x,y) value"
 	
 	std::stringstream usrINput;
 	int coordinateX = 0;
 	int coordinateY = 0;
+	int userValue = 0;
+	char throwaway = ' ';
+
+	std::cout << "Please enter x and y coordnites and value. Example: (x,y) value ";
 
 }
 
-void Puzzle::changePuzzle() {
+void Puzzle::changeandPrintPuzzle() {
 	for (int row = 0; row < gridsize; row++) {
 		for (int col = 0; col < gridsize; col++) {
 		

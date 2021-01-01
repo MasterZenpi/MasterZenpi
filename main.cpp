@@ -18,6 +18,8 @@ using namespace std;
 
 int main() {
 
+	//test when the puzzle is completed if it runs as intended
+
 	Puzzle mainPuzzle;
 
 	do {
@@ -25,7 +27,10 @@ int main() {
 		mainPuzzle.instructions();
 		mainPuzzle.PrintPuzzle();
 		mainPuzzle.userCordnites();
-
+		mainPuzzle.isColCompleted();
+		mainPuzzle.isRowCompleted();
+		mainPuzzle.isPuzzleCompleted();
+		mainPuzzle.changeandPrintPuzzle();
 
 	} while (!mainPuzzle.isPuzzleCompleted());
 
