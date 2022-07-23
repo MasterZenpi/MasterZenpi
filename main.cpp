@@ -1,6 +1,4 @@
 #include <iostream>
-#include <exception>
-#include <vector>
 #include "Puzzle.h"
 
 using namespace std;
