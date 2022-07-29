@@ -27,7 +27,7 @@ int main() {
 		mainPuzzle.userCordnites();
 		mainPuzzle.isColCompleted();
 		mainPuzzle.isRowCompleted();
-		mainPuzzle.isPuzzleCompleted();
+
 		mainPuzzle.changeandPrintPuzzle();
 
 	} while (!mainPuzzle.isPuzzleCompleted());
